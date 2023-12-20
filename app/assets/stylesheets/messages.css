@@ -56,19 +56,90 @@
   width: calc(100vw - 300px);
 }
 
+/* チャットヘッダー */
 .chat-header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.chat-header .chat_name {
+  font-size: 24px;
+  color: #333;
+}
+
+.chat-header a {
+  color: darkred;
+  border: 1px solid darkred;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* メッセージ画面 */
 .messages {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
+  overflow: scroll;
 }
 
+.messages .user_name {
+  color: #434a54;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.byname_post_time {
+  display: flex;
+  align-items: center;
+}
+
+.time_stamp {
+  font-size: 12px;
+  color: #999;
+}
+
+/* フォーム */
 .form {
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.input_area {
+  padding-left: 10px;
+  width: calc(100% - 15px - 40px);
+  border: none;
+}
+
+.submit_form {
+  background-color: #38AEF0;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  padding: 0 20px;
+  margin-left: 15px;
+}
+
+.form_input {
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.form_image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
 }

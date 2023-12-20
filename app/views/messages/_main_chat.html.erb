@@ -1,8 +1,31 @@
+<%# チャットヘッダー画面 %>
 <div class="chat-header">
+  <div class="chat_name">hogefuga</div>
+  <a href="#">チャットを終了する</a>
 </div>
 
+<%# メッセージ画面 %>
 <div class="messages">
+  <div class="byname_post_time">
+    <p class="user_name">Tyler</p>
+    <p class="time_stamp">2023/12/20(Wed) 22:02</p>
+  </div>
+  <p class="message_content">おはよう</p>
+  <div class="byname_post_time">
+    <p class="user_name">NOB</p>
+    <p class="time_stamp">2023/12/20(Wed) 22:08</p>
+  </div>
+  <p class="message_content">こんばんは</p>
 </div>
 
+<%# フォーム投稿画面 %>
 <div class="form">
+  <div class="form_input">
+    <input placeholder="type a message" class="input_area">
+    <label class="form_image">
+      <span class="image-file">画像</span>
+      <input type="file" class="hidden">
+    </label>
+  </div>
+  <input type="submit" value="送信" class="submit_form">
 </div>

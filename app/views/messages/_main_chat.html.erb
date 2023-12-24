@@ -6,16 +6,7 @@
 
 <%# メッセージ画面 %>
 <div class="messages">
-  <div class="byname_post_time">
-    <p class="user_name">Tyler</p>
-    <p class="time_stamp">2023/12/20(Wed) 22:02</p>
-  </div>
-  <p class="message_content">おはよう</p>
-  <div class="byname_post_time">
-    <p class="user_name">NOB</p>
-    <p class="time_stamp">2023/12/20(Wed) 22:08</p>
-  </div>
-  <p class="message_content">こんばんは</p>
+  <%= render partial: "message", collection: @messages %>
 </div>
 
 <%# フォーム投稿画面 %>
